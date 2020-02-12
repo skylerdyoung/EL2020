@@ -1,4 +1,4 @@
-https://www.newpaltz.edu/media/identity/logos/newpaltzlogo.jpg
+
 
 Spring 2020 Embedded Linux Class
  
