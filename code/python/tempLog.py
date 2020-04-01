@@ -81,7 +81,7 @@ def alert(data1):
 data1 = readF(tempPin)
 
 try:
-	with open("../log/templog.csv", "a") as log:
+	with open("../../log/tempLog.csv", "a") as log:
 
 		while True:
 			global eChk

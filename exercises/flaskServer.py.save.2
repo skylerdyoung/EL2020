@@ -1,4 +1,4 @@
-#!/usr/bin/python
+'#!/usr/bin/python
 
 #THis script creates a Flask server, and serves the index.html out of the templates folder.
 #It also creates an app route to be called via ajax from javascript in the index.html to query
@@ -13,7 +13,7 @@ import sqlite3 as sql
 import json
 
 #Globals
-con = sql.connect('../log/tempLog.db',check_same_thread=False)
+con = sql.connect('../log/tempLog.db')
 cur = con.cursor()
 app = Flask(__name__)
 
@@ -29,7 +29,7 @@ def chartData():
 	print (dataset)
 	chartData = []
 	for row in dataset:
-		chartData.append({"Time": row[0], "Temperature": float(row[1])})
+		chartData.append({"Date": row[0], "Temperature": float(row[1])})
 	return Response(json.dumps(chartData), mimetype='application/json')
 
 if __name__ == "__main__":

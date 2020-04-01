@@ -30,7 +30,7 @@ Subject = "Alert!"
 server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
 
 #Connect to the database
-con = sql.connect('../log/tempLog.db')
+con = sql.connect('../../log/tempLog.db')
 cur = con.cursor()
 
 #Set the initial checkbit to 0.  This will throw a warning when run, but will still work just fine

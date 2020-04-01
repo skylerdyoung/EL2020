@@ -13,7 +13,7 @@ import sqlite3 as sql
 import json
 
 #Globals
-con = sql.connect('../log/tempLog.db',check_same_thread=False)
+con = sql.connect('../log/tempLog.db')
 cur = con.cursor()
 app = Flask(__name__)
 
@@ -29,8 +29,9 @@ def chartData():
 	print (dataset)
 	chartData = []
 	for row in dataset:
-		chartData.append({"Time": row[0], "Temperature": float(row[1])})
+		chartData.append({"Date": row[0], "Temperature": float(row[1])})
 	return Response(json.dumps(chartData), mimetype='application/json')
 
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', port=2020, debug=True)
+

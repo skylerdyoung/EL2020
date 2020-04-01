@@ -1,3 +1,4 @@
+
 #!/usr/bin/python
 #The Temperature reader uses the DHT22 sensor to read the temperature and humidity in the room once every 60 seconds, and 
 #write the data to an sqlite database.  It has a temperature range test where if the temperature is within range, it keeps a green

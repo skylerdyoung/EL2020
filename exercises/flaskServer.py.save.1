@@ -29,7 +29,7 @@ def chartData():
 	print (dataset)
 	chartData = []
 	for row in dataset:
-		chartData.append({"Time": row[0], "Temperature": float(row[1])})
+		chartData.append({"Date": row[0], "Temperature": float(row[1])})
 	return Response(json.dumps(chartData), mimetype='application/json')
 
 if __name__ == "__main__":
