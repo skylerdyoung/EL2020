@@ -9,7 +9,7 @@ Version:
 
 About:
 
-	This project is a collection of functions and classes that I wrote
+This project is a collection of functions and classes that I wrote
 to expand or utilize the sensors that we used in the Embedded Linux class.
 I used my professor's code for reference.
 
